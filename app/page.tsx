@@ -31,6 +31,7 @@ export default function Home() {
                         className={styles["contact_iteam"]}
                     >
                         <FaPhoneAlt className={styles["link_img"]} />
+                        +374 55 65-63-66
                     </a>
                     <a
                         target={"_blank"}

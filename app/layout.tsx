@@ -15,11 +15,11 @@ export const metadata: Metadata = {
         title: "ArmProf",
         description:
             "Learn and create web applications and services with ArmProf, the experts in web programming, graphic design, and SMM.",
-        url: "https://www.armprof.com",
+        url: "https://www.armprof.am",
         siteName: "ArmProf",
         images: [
             {
-                url: "https://www.armprof.com/img/logo.png",
+                url: "https://www.armprof.am/img/logo.png",
                 width: 800,
                 height: 600,
                 alt: "ArmProf Logo",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         creator: "@armprof",
         images: [
             {
-                url: "https://www.armprof.com/img/logo.png",
+                url: "https://www.armprof.am/img/logo.png",
                 alt: "ArmProf Logo",
             },
         ],
