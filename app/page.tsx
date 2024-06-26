@@ -4,6 +4,7 @@ import { IoMailOutline, IoLocation } from "react-icons/io5";
 import { FiInstagram } from "react-icons/fi";
 
 export default function Home() {
+    //
     return (
         <main className={styles.main}>
             <div className={styles["container"]}>
