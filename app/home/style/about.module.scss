@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 650px;
+
+    .title {
+        font-size: 50px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+
+        .imgdiv {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+
+            .img {
+                width: 500px;
+                height: 450px;
+            }
+        }
+
+        .anuthing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 50%;
+
+            .p {
+                width: 80%;
+            }
+        }
+    }
+
+}

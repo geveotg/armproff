@@ -2,12 +2,13 @@ import styles from "./page.module.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMailOutline, IoLocation } from "react-icons/io5";
 import { FiInstagram } from "react-icons/fi";
+import HomePage from "./home/page";
 
 export default function Home() {
-    //
     return (
         <main className={styles.main}>
-            <div className={styles["container"]}>
+            <HomePage />
+            {/* <div className={styles["container"]}>
                 <h3 className={styles["title"]}>Ամբողջական կայքը պատրաստ կլինի Շուտով</h3>
 
                 <div className={styles["curses"]}>
@@ -77,7 +78,7 @@ export default function Home() {
                         className={`${styles["personal_img"]} ${styles["gevorg"]}`}
                     />
                 </div>
-            </div>
+            </div> */}
         </main>
     );
 }
