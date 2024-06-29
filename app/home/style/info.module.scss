@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+
+    .anuthing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        color: rgb(1, 17, 121);
+        font-size: 50px;
+        font-weight: bolder;
+
+        .p {
+            width: 70%;
+        }
+    }
+
+    .imgdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+        .img {
+            width: 500px;
+            height: 450px;
+        }
+    }
+}

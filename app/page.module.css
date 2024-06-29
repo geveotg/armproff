@@ -1,4 +1,12 @@
-.main {
+
+.main{
+    /* margin-top: 30px; */
+    background: rgb(65, 49, 197);
+    background: linear-gradient(90deg, rgba(65, 49, 197, 1) 24%, rgba(114, 108, 242, 1) 63%);
+    /* min-height: 100px; */
+}
+
+/* .main {
     background-image: url(../public/bg_img.jpeg);
     object-fit: cover;
     background-size: cover;
@@ -174,4 +182,4 @@
         width: 100px;
         height: 100px;
     }
-}
+} */
