@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
 import Header from "./navigation/header";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,7 +56,6 @@ export default function RootLayout({
             <body className={inter.className}>
                 <Header />
                 {children}
-
             </body>
         </html>
     );

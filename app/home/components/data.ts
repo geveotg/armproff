@@ -30,3 +30,47 @@ export const items = [
             "next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, next-ի մասին, ",
     },
 ];
+
+export const teamMembers = [
+    { name: "Արման", role: "մասնագիտություն", img: "/staff/Arman.jpeg" },
+    { name: "Նարինե", role: "մասնագիտություն", img: "/staff/Narine.jpeg" },
+    { name: "Գևորգ", role: "մասնագիտություն ", img: "/staff/Gevorg.jpg" },
+    { name: "Արման", role: "մասնագիտություն", img: "/staff/Arman.jpeg" },
+    { name: "Նարինե", role: "մասնագիտություն", img: "/staff/Narine.jpeg" },
+    { name: "Գեվորգ", role: "մասնագիտություն ", img: "/staff/Gevorg.jpg" },
+];
+
+export const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+            },
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+};
