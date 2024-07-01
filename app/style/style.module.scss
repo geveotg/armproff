@@ -20,21 +20,6 @@ $opacity: 0.8;
 $padding-button: 10px;
 $title-font-size: 50px;
 $text-font-size: 16px;
-// $menu_iteam_color: #000000;
-// $link-hover-color: #52a3ef;
-// $primary-color: #2f8539;
-// $color-star: rgb(255, 255, 0);
-// $success-color: #28a745;
-// $danger-color: #bf4342;
-// $secondary-background: #fff;
-// $font-size-carts: 12px;
-// $font-size-stars: 14px;
-// $font-style: italic;
-// $font-size-icone: 45px;
-// $text-shadow-title: rgb(205, 125, 125);
-// $letter-spacing: 1px;
-// $primary-dark: #1a1a1a;
-// $border-radius-icon: 50%;
 
 
 @mixin display-center($display, $justify-content, $align-items, $flex-direction) {
@@ -49,38 +34,3 @@ $text-font-size: 16px;
     font-size: $text-font-size;
     font-weight: $font-weight;
 }
-
-// @mixin display-flex-direction($display, $flex-direction, $align-items) {
-//     display: $display;
-//     flex-direction: $flex-direction;
-//     align-items: $align-items;
-// }
-
-// @mixin display-grid {
-//     display: grid;
-//     grid-gap: 5px;
-//     align-items: center;
-//     grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
-//     border-radius: 10px;
-// }
-
-
-// @mixin input-style {
-//     border: 2px solid !important;
-// }
-
-// @mixin button {
-//     margin: 10px 0px;
-//     border: 0;
-//     padding: 10px 30px;
-//     border-radius: 5px;
-//     color: white;
-//     background: red;
-//     font-family: cursive;
-//     font-weight: 700;
-//     font-size: 16px;
-//     display: flex;
-//     align-items: center;
-//     gap: 5px;
-//     cursor: pointer;
-// }
