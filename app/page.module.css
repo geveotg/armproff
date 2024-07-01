@@ -128,8 +128,13 @@
         gap: 20px;
         background-image: url(../public/bj_small.jpeg);
     }
+    .personal_container{
+        width: 100%;
+    }
 
-    .title_ol {}
+    .container{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -160,6 +165,11 @@
         width: 140px;
         height: 140px;
     }
+    .title_ol{
+        padding-top: 25px;
+        font-size: 18px;
+    }
+    
 }
 
 @media screen and (max-width: 470px) {

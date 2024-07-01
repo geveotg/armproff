@@ -8,7 +8,7 @@ export default function Home() {
         <main className={styles.main}>
             <div className={styles["container"]}>
                 <h3 className={styles["title"]}>
-                    <ol className={styles['title_ol']}>
+                    <ul className={styles['title_ol']}>
                         <li>
                             Վեբ-Ծրագրավորման Դասընթացներ
                         </li>
@@ -24,7 +24,7 @@ export default function Home() {
                         <li>
                             Գրաֆիկ Դիզայն
                         </li>
-                    </ol>
+                    </ul>
                 </h3>
 
                 <div className={styles["curses"]}>
