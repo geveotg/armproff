@@ -9,8 +9,8 @@ export default function Home() {
             <div className={styles["container"]}>
                 <h3 className={styles["title"]}>
                     <ol className={styles['title_ol']}>
-                        <li >
-                            Վեբ-Ծրագրավորման Դասընթացներ։
+                        <li>
+                            Վեբ-Ծրագրավորման Դասընթացներ
                         </li>
                         <li>
                             SMM (Դասընթացներ)
