@@ -114,6 +114,7 @@
         flex-direction: column;
         height: auto;
         gap: 20px;
+        background-image: url(../public/bj_small.jpeg);
     }
 }
 
