@@ -35,9 +35,7 @@ export const teamMembers = [
     { name: "Արման", role: "մասնագիտություն", img: "/staff/Arman.jpeg" },
     { name: "Նարինե", role: "մասնագիտություն", img: "/staff/Narine.jpeg" },
     { name: "Գևորգ", role: "մասնագիտություն ", img: "/staff/Gevorg.jpg" },
-    { name: "Հերմինե", role: "մասնագիտություն", img: "/staff/Hermine.jpg" },
-    { name: "Նարինե", role: "մասնագիտություն", img: "/staff/Narine.jpeg" },
-    { name: "Գեվորգ", role: "մասնագիտություն ", img: "/staff/Gevorg.jpg" },
+    { name: "Հերմինե", role: "մասնագիտություն", img: "/staff/Hermine.jpg" }
 ];
 
 export const settings = {
@@ -74,3 +72,4 @@ export const settings = {
         },
     ],
 };
+
