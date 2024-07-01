@@ -7,7 +7,25 @@ export default function Home() {
     return (
         <main className={styles.main}>
             <div className={styles["container"]}>
-                <h3 className={styles["title"]}>Ամբողջական կայքը պատրաստ կլինի Շուտով</h3>
+                <h3 className={styles["title"]}>
+                    <ol className={styles['title_ol']}>
+                        <li >
+                            Վեբ-Ծրագրավորման Դասընթացներ։
+                        </li>
+                        <li>
+                            SMM (Դասընթացներ)
+                        </li>
+                        <li>
+                            Բիզնես էջերի մշակում և կառավարում (SMM)
+                        </li>
+                        <li>
+                            Վեբ-Կայքերի պատրաստում
+                        </li>
+                        <li>
+                            Գրաֆիկ Դիզայն
+                        </li>
+                    </ol>
+                </h3>
 
                 <div className={styles["curses"]}>
                     <h2 className={styles["curse_items"]}>
