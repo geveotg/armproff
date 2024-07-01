@@ -1,47 +1,36 @@
+@import '../../style//style.module.scss';
+
 .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    @include display-center (flex, space-around, center, column);
     height: 650px;
 
     .title {
-        font-size: 50px;
+        @include text-style(none, 50px, 800);
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display-center(flex, center, center, none);
     }
 
     .section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-
+        @include display-center(flex, center, center, row);
 
         .imgdiv {
-            display: flex;
-            justify-content: center;
             width: 50%;
+            @include display-center(flex, center, none, none);
 
             .img {
                 width: 500px;
                 height: 450px;
+                border-radius: $border-radius-img;
             }
         }
 
         .anuthing {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
             width: 50%;
+            @include display-center(flex, center, center, column);
 
             .p {
                 width: 80%;
             }
         }
     }
-
 }

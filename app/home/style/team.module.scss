@@ -1,71 +1,24 @@
+@import '../../style/style.module.scss';
+
+.personal_card {
+    @include display-center(flex, center, center, column);
+    width: 180px;
+
+    .card_info {
+        @include display-center (flex, none, center, column);
+        width: 100%;
+        gap: 20px;
+
+        .staff_img {
+            width: 200px;
+            height: 200px;
+            border-radius: $border-radius-staffImg;
+            object-fit: cover;
+        }
+    }
+}
+
 .slider-container {
     width: 100%;
     max-width: 1200px;
-    margin: 0% auto;
-}
-.card_info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-.personal_card {
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.staff_img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    // flex-direction: column;
-    height: 400px;
-    width: 100%;
-
-    .title {
-        display: flex;
-        justify-content: center;
-        font-size: 60px;
-    }
-
-    .merTim {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        height: 300px;
-
-        .img-div-container {
-            width: 50%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row;
-
-            .slide {
-                width: 50%;
-                box-sizing: border-box;
-                text-align: center;
-                padding: 10px;
-
-                .image {
-                    object-fit: cover;
-                    width: 200px;
-                    height: 200px;
-                    border-radius: 50%;
-                    margin-bottom: 15px;
-                }
-            }
-        }
-    }
 }

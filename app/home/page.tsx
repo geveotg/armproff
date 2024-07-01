@@ -15,8 +15,6 @@ const HomePage: FC = (): JSX.Element => {
             <Study />
 
             <Team />
-
-
         </div>
     )
 }

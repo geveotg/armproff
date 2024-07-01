@@ -1,0 +1,86 @@
+$background: #333;
+$background-text: rgb(64, 224, 15);
+$border: 1px solid;
+$border-radius-button: 10px;
+$border-radius-staffImg: 50%;
+$border-radius-img: 20px;
+$border-color: rgb(199, 199, 199);
+$box-shadow-color: rgb(135, 135, 135);
+$background-drop_dawn: #887feb;
+$color: white;
+$color-icone: rgb(18, 144, 234);
+$cursor: pointer;
+$error_color: #af1818;
+$font-weight: 900;
+$font-size: 19px;
+$text_color: rgb(0, 0, 0);
+$link-color: #043c71;
+$margin-bottom:10px;
+$opacity: 0.8;
+$padding-button: 10px;
+$title-font-size: 50px;
+$text-font-size: 16px;
+// $menu_iteam_color: #000000;
+// $link-hover-color: #52a3ef;
+// $primary-color: #2f8539;
+// $color-star: rgb(255, 255, 0);
+// $success-color: #28a745;
+// $danger-color: #bf4342;
+// $secondary-background: #fff;
+// $font-size-carts: 12px;
+// $font-size-stars: 14px;
+// $font-style: italic;
+// $font-size-icone: 45px;
+// $text-shadow-title: rgb(205, 125, 125);
+// $letter-spacing: 1px;
+// $primary-dark: #1a1a1a;
+// $border-radius-icon: 50%;
+
+
+@mixin display-center($display, $justify-content, $align-items, $flex-direction) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}
+
+@mixin text-style($text_color, $text-font-size, $font-weight ) {
+    color: $text_color;
+    font-size: $text-font-size;
+    font-weight: $font-weight;
+}
+
+// @mixin display-flex-direction($display, $flex-direction, $align-items) {
+//     display: $display;
+//     flex-direction: $flex-direction;
+//     align-items: $align-items;
+// }
+
+// @mixin display-grid {
+//     display: grid;
+//     grid-gap: 5px;
+//     align-items: center;
+//     grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+//     border-radius: 10px;
+// }
+
+
+// @mixin input-style {
+//     border: 2px solid !important;
+// }
+
+// @mixin button {
+//     margin: 10px 0px;
+//     border: 0;
+//     padding: 10px 30px;
+//     border-radius: 5px;
+//     color: white;
+//     background: red;
+//     font-family: cursive;
+//     font-weight: 700;
+//     font-size: 16px;
+//     display: flex;
+//     align-items: center;
+//     gap: 5px;
+//     cursor: pointer;
+// }

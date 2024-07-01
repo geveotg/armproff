@@ -1,7 +1,6 @@
+@import '../style/style.module.scss';
+
 .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    @include display-center(flex, space-around, center, column);
     min-width: 1440px;
 }

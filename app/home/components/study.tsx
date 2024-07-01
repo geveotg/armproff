@@ -14,27 +14,23 @@ const Study: FC = (): JSX.Element => {
             <h1 className={classes["title"]}>ինչ ենք սովորելու միասին</h1>
             <div className={classes["sections"]}>
                 <div className={classes["menu"]}>
-                    {
-                        <div className={classes["drop-menu"]}>
-                            {items.map((item, index) => (
-                                <div key={item.id} className={classes["Menue"]}>
-                                    <p
-                                        onClick={() => handleClick(index)}
-                                        className={classes["button"]}
-                                    >
-                                        {item.text}
-                                    </p>
-                                    <div
-                                        className={`${classes["content"]} ${
-                                            openIndex === index ? classes["contentOpen"] : ""
-                                        }`}
-                                    >
-                                        <p>{item.content}</p>
-                                    </div>
+                    {<div className={classes["drop-menu"]}>
+                        {items.map((item, index) => (
+                            <div key={item.id} className={classes["Menue"]}>
+                                <p
+                                    onClick={() => handleClick(index)}
+                                    className={classes["button"]}
+                                >
+                                    {item.text}
+                                </p>
+                                <div
+                                    className={`${classes["content"]} ${openIndex === index ? classes["contentOpen"] : ""}`}
+                                >
+                                    <p>{item.content}</p>
                                 </div>
-                            ))}
-                        </div>
-                    }
+                            </div>
+                        ))}
+                    </div>}
                 </div>
                 <div className={classes["imgdivs"]}>
                     <img src="/img/img1.png" alt="" className={classes["img"]} />

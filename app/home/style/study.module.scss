@@ -1,69 +1,57 @@
+@import '../../style/style.module.scss';
+
 .language {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    @include display-center(flex, space-around, center, column);
     height: 600px;
 
     .title {
-        font-size: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include display-center(flex, center, center, none);
+        font-size: $title-font-size;
     }
 
     .sections {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
+        @include display-center(flex, center, center, row);
 
         .menu {
-
-            display: flex;
-            justify-content: center;
-            align-items: start;
+            @include display-center(flex, center, start, none);
             width: 50%;
             height: 100%;
 
             .drop-menu {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
+                @include display-center(flex, center, center, column);
                 width: 65%;
 
                 .content {
                     max-height: 0;
                     overflow: hidden;
-                    transition: max-height 0.8s, opacity 0.1s;
+                    transition: max-height 1s, opacity 0.1s;
                 }
 
                 .contentOpen {
+                    background-color: $background-drop_dawn;
                     max-height: 170px;
-                    opacity: 0.8;
+                    opacity: $opacity;
                     overflow-y: auto;
                 }
 
                 .button {
-                    cursor: pointer;
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 5px;
-                    margin-bottom: 10px;
+                    cursor: $cursor;
+                    padding: $padding-button;
+                    border: $border $border-color;
+                    border-radius: $border-radius-button;
+                    margin-bottom: $margin-bottom;
                 }
             }
         }
 
         .imgdivs {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include display-center(flex, center, center, none);
             width: 50%;
 
             .img {
                 width: 500px;
                 height: 450px;
+                border-radius: $border-radius-img;
             }
         }
 

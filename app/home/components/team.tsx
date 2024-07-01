@@ -1,7 +1,7 @@
 "use client";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FC, useState } from "react";
+import { FC } from "react";
 import classes from "../style/team.module.scss";
 import Slider from "react-slick";
 import { teamMembers } from "./data";
@@ -12,8 +12,11 @@ const Team: FC = (): JSX.Element => {
         return (
             <div key={i} className={classes["personal_card"]}>
                 <div className={classes["card_info"]}>
-                    <img src={img} alt="img" className={classes["staff_img"]} />
-
+                    <img
+                        src={img}
+                        alt="img"
+                        className={classes["staff_img"]}
+                    />
                     <p className={classes["staff_name"]}>{name}</p>
                     <p className={classes["staff_name"]}>{role}</p>
                 </div>
