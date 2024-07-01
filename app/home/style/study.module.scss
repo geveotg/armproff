@@ -1,4 +1,4 @@
-@import '../../style/style.module.scss';
+@import "../../style/style.module.scss";
 
 .language {
     @include display-center(flex, space-around, center, column);
@@ -54,6 +54,23 @@
                 border-radius: $border-radius-img;
             }
         }
+    }
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
 
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #233f93;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #1c1f52;
+        border-radius: 5px;
     }
 }
