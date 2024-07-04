@@ -1,11 +1,10 @@
 @import '../../style/style.module.scss';
 
 .container {
-    height: 650px;
+    height: 500px;
     @include display-center(flex, none, center, column);
 
     .title-div {
-        width: 100%;
         height: 30%;
         @include display-center(flex, space-around, center, column);
 
@@ -15,43 +14,40 @@
     }
 
     .container_div {
-        width: 100%;
         height: 70%;
         @include display-center(flex, space-around, center, row);
 
         .img_div {
-            @include display-center(flex, center, center, none);
-
+            @include display-center(flex, center, none, none);
             width: 50%;
             height: 100%;
 
             .img {
-                width: 75%;
-                height: 90%;
+                width: 80%;
+                height: 95%;
                 object-fit: cover;
             }
         }
 
         .text_div {
-            height: 80%;
+            height: 90%;
             width: 50%;
             @include display-center(flex, space-around, none, column);
+
 
             .text-ol {
                 @include display-center(flex, none, none, column);
                 gap: 10px;
-                font-size: 16px;
+                font-size: 18px;
             }
         }
     }
 }
 
-
 @media screen and (max-width: 1000px) {
     .container {
         .title-div {
             height: 20%;
-            font-size: 15px;
         }
 
         .container_div {
@@ -66,7 +62,7 @@
 
                 .img {
                     width: 80%;
-                    height: 85%;
+                    height: 95%;
                 }
             }
 
@@ -74,24 +70,21 @@
                 width: 40%;
 
                 .text-ol {
-                    font-size: 13px;
+                    font-size: 18px;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 780px) {
     .container {
         .title-div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 15%;
-            font-size: 10px;
+            font-size: 18px;
 
             .titleP {
-                font-size: 15px;
+                font-size: 18px;
             }
         }
 
@@ -113,13 +106,51 @@
 
             .text_div {
                 width: 40%;
-                display: flex;
-                justify-content: center;
 
                 .text-ol {
-                    font-size: 11px;
+                    font-size: 14px;
                 }
             }
         }
     }
+
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        .title-div {
+            height: 10%;
+            font-size: 15px;
+
+            .titleP {
+                font-size: 15px;
+            }
+        }
+
+        .container_div {
+            width: 100%;
+            height: 90%;
+
+            .img_div {
+                width: 60%;
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                .img {
+                    width: 80%;
+                    height: 90%;
+                }
+            }
+
+            .text_div {
+                width: 40%;
+
+                .text-ol {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
 }

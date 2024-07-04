@@ -15,12 +15,11 @@ $font-weight: 900;
 $font-size: 19px;
 $text_color: rgb(0, 0, 0);
 $link-color: #043c71;
-$margin-bottom:10px;
+$margin-bottom: 10px;
 $opacity: 0.8;
 $padding-button: 10px;
-$title-font-size: 50px;
+$title-font-size: 65px;
 $text-font-size: 16px;
-
 
 @mixin display-center($display, $justify-content, $align-items, $flex-direction) {
     display: $display;

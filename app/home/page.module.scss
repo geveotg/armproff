@@ -2,5 +2,4 @@
 
 .container {
     @include display-center(flex, space-around, center, column);
-    min-width: 1440px;
 }

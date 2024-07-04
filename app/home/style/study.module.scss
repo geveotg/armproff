@@ -2,18 +2,23 @@
 
 .language {
     @include display-center(flex, space-around, center, column);
-    height: 600px;
+    height: 700px;
 
     .title {
+        height: 20%;
         @include display-center(flex, center, center, none);
         font-size: $title-font-size;
+        font-weight: 900;
+        text-shadow: 8px 8px 8px black;
+        color: aqua;
     }
 
     .sections {
+        height: 80%;
         @include display-center(flex, center, center, row);
 
         .menu {
-            @include display-center(flex, center, start, none);
+            @include display-center(flex, center, center, none);
             width: 50%;
             height: 100%;
 
@@ -21,25 +26,38 @@
                 @include display-center(flex, center, center, column);
                 width: 65%;
 
-                .content {
-                    max-height: 0;
-                    overflow: hidden;
-                    transition: max-height 1s, opacity 0.1s;
-                }
-
-                .contentOpen {
-                    background-color: $background-drop_dawn;
-                    max-height: 170px;
-                    opacity: $opacity;
-                    overflow-y: auto;
-                }
-
                 .button {
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 900;
+                    text-shadow: 5px 0px 3px black;
+                    color: aqua;
                     cursor: $cursor;
                     padding: $padding-button;
                     border: $border $border-color;
                     border-radius: $border-radius-button;
                     margin-bottom: $margin-bottom;
+                }
+
+                .content {
+                    font-size: 17px;
+                    background-color: rgba(145, 85, 230, 0.7);
+                    border-radius: $border-radius-button;
+                    max-height: 0;
+                    opacity: 0.6;
+                    color: rgb(0, 0, 0);
+                    text-shadow: 1px 0px 0px rgb(0, 0, 0);
+                    overflow: hidden;
+                    transition: max-height 1s, opacity 0.1s;
+                }
+
+                .contentOpen {
+                    background-color: rgba(145, 85, 230, 0.7);
+                    max-height: 170px;
+                    opacity: $opacity;
+                    overflow-y: auto;
+                    color: rgb(0, 0, 0);
+                    text-shadow: 1px 0px 0px rgb(0, 0, 0);
                 }
             }
         }
@@ -47,14 +65,17 @@
         .imgdivs {
             @include display-center(flex, center, center, none);
             width: 50%;
+            height: 100%;
 
             .img {
-                width: 500px;
-                height: 450px;
+                object-fit: cover;
+                width: 80%;
+                height: 95%;
                 border-radius: $border-radius-img;
             }
         }
     }
+
     ::-webkit-scrollbar {
         width: 8px;
     }
@@ -72,5 +93,77 @@
     ::-webkit-scrollbar-thumb:hover {
         background: #1c1f52;
         border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .language {
+        .title {
+            font-size: 45px;
+        }
+
+        .sections {
+            .menu {
+                width: 35%;
+
+                .drop-menu {
+                    width: 100%;
+
+                    .button {
+                        display: flex;
+                        align-items: center;
+                        height: 55px;
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .imgdivs {
+                width: 65%;
+
+                .img {
+                    width: 85%;
+                    height: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .language {
+        .title {
+            font-size: 30px;
+        }
+
+        .sections {
+            .menu {
+                width: 40%;
+
+                .drop-menu {
+                    width: 95%;
+
+                    .button {
+                        font-weight: 300;
+                        width: 80%;
+                        font-size: 13px;
+                    }
+
+                    .content {
+                        width: 80%;
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .imgdivs {
+                width: 60%;
+
+                .img {
+                    width: 90%;
+                    height: 60%;
+                }
+            }
+        }
     }
 }

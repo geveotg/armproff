@@ -18,7 +18,7 @@ const Team: FC = (): JSX.Element => {
                         className={classes["staff_img"]}
                     />
                     <p className={classes["staff_name"]}>{name}</p>
-                    <p className={classes["staff_name"]}>{role}</p>
+                    <p className={classes["staff_role"]}>{role}</p>
                 </div>
             </div>
         );
@@ -26,7 +26,14 @@ const Team: FC = (): JSX.Element => {
 
     return (
         <div className={classes["slider-container"]}>
-            <Slider {...settings}>{teamList}</Slider>
+            {/* <div>/ */}
+            <h1 className={classes['title']}>
+                Մեր թիմը
+            </h1>
+            {/* </div> */}
+            <div className={classes['slider']}>
+                <Slider {...settings}>{teamList}</Slider>
+            </div>
         </div>
     );
 };

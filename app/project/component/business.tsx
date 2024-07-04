@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import classes from '../style/carts.module.scss'
+import classes from '../style/business.module.scss'
 
 const Carts: FC = (): JSX.Element => {
     return (
@@ -23,12 +23,12 @@ const Carts: FC = (): JSX.Element => {
                 <div className={classes['text_div']}>
                     <ol className={classes['text-ol']}>
                         <li>Դիզայն(1 տարբերակ)</li>
-                        <li>Ծրագրավորում զրոյից(մաքուր կոդ)՝ JavaScript, TypeScript , React Js Next JS տեխնոլոգիաներով</li>
-                        <li>Ադապտիվ տարբերակ,հասանելի ցանկացած չափսի էկրաններից և հեռախոսներից</li>
+                        <li>Ծրագրավորում զրոյից(մաքուր կոդ)` JavaScript, TypeScript , React Js, Next JS տեխնոլոգիաներով</li>
+                        <li>Ադապտիվ տարբերակ, հասանելի ցանկացած չափսի էկրաններից և հեռախոսներից</li>
                         <li>Անվճար սպասարկում 1 տարի</li>
                     </ol>
                     <p className={classes['text-ol']}>
-                        Սահմանափակ ֆունկցիոնալությամբ այցեքարտ կայքեր: Այցեքարտ կայքերն ունենում են սահմանափակ էջեր և ուղղված են բիզնեսի առաջխաղացմանը և օնլայն տիրույթում ներկայացչություն ունենալուն:
+                        Սահմանափակ ֆունկցիոնալությամբ այցեքարտ կայքեր: Այցեքարտ կայքերն ունենում են սահմանափակ էջեր և ուղղված են բիզնեսի առաջխաղացմանը և օնլայն տիրույթում ներկայացուչություն ունենալուն:
                     </p>
                 </div>
             </div>

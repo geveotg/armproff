@@ -7,7 +7,7 @@ const Header: FC = (): JSX.Element => {
         <div className={classes['conatiner']}>
             <Link href={'/'} className={classes['nav-bar']}> Գլխավոր էջ </Link>
             <Link href={'/project'} className={classes['nav-bar']}> Էջերի Պատրաստում </Link>
-            <Link href={'/'} className={classes['nav-bar']}> Home </Link>
+            <Link href={'/'} className={classes['nav-bar']}> Մեր Մասին </Link>
         </div>
     )
 }

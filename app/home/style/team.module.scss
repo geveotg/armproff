@@ -2,7 +2,7 @@
 
 .personal_card {
     @include display-center(flex, center, center, column);
-    width: 180px;
+    width: 10%;
 
     .card_info {
         @include display-center (flex, none, center, column);
@@ -15,10 +15,71 @@
             border-radius: $border-radius-staffImg;
             object-fit: cover;
         }
+
+        .staff_name {
+            font-size: 25px;
+            font-weight: 900;
+        }
+
+        .staff_role {
+            width: 50%;
+            text-align: center;
+        }
     }
 }
 
 .slider-container {
-    width: 100%;
-    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+
+    .title {
+        font-size: 70px;
+        font-weight: 900;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    .slider {
+        width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .slider-container {
+        .slider {
+            width: 900px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .slider-container {
+        .slider {
+            width: 650px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .personal_card {
+        width: 110px;
+
+        .card_info {
+            width: 80%;
+
+            .staff_img {
+                width: 100px;
+                height: 100px;
+
+            }
+        }
+    }
+
+    .slider-container {
+        .slider {
+            width: 350px;
+        }
+    }
 }

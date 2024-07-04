@@ -8,9 +8,9 @@ const Project: FC = (): JSX.Element => {
     return (
         <div className={classes['container']}>
             <Carts />
-            <div className={classes['line']}></div>
+            <hr />
             <LendingPage />
-            <div className={classes['line']}></div>
+            <hr />
             <Corporate />
         </div>
     )

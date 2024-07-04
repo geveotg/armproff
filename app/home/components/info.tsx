@@ -6,7 +6,10 @@ const Info: FC = (): JSX.Element => {
         <div className={classes['container']}>
             <div className={classes['anuthing']}>
                 <p className={classes['p']}>
-                    ինչ-որ հետաքրքիր միտք
+                    Բարի գալուստ <big style={{ color: 'rgb(255, 150, 1)' }}>ArmProf</big> ծրագրավորման կենտրոն
+                </p>
+                <p className={classes['pp']}>
+                    Մենք անցկացնում ենք ծրագրավորման խորացված դասընթացներ և ընդունում ենք ցանկացած վեբ կայքերի, և էջերի պատրաստման պատվերներ՝ ապահովելով բարձր որակ և արդյունավետ լուծումներ:
                 </p>
             </div>
             <div className={classes['imgdiv']}>

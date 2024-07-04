@@ -1,14 +1,28 @@
-.nav-bar {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 23px;
-    padding: 22px;
-}
+@import '../style/style.module.scss';
 
 .conatiner {
     background: rgb(54, 38, 198);
     height: 60px;
-    display: flex;
-    align-items: center;
-    box-shadow: 10px 10px 10px 5px silver;
+    @include display-center(flex, space-evenly, center, none);
+
+    .nav-bar {
+        height: 60px;
+        width: 30%;
+        @include display-center(flex, center, center, none);
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 23px;
+        padding: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .conatiner {
+        height: 50px;
+
+        .nav-bar {
+            height: 50px;
+            font-size: 12px;
+        }
+    }
 }

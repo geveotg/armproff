@@ -11,7 +11,9 @@ const Study: FC = (): JSX.Element => {
 
     return (
         <div className={classes["language"]}>
-            <h1 className={classes["title"]}>ինչ ենք սովորելու միասին</h1>
+            <h1 className={classes["title"]}>
+                ինչ ենք սովորելու միասին
+            </h1>
             <div className={classes["sections"]}>
                 <div className={classes["menu"]}>
                     {<div className={classes["drop-menu"]}>
@@ -33,7 +35,7 @@ const Study: FC = (): JSX.Element => {
                     </div>}
                 </div>
                 <div className={classes["imgdivs"]}>
-                    <img src="/img/img1.png" alt="" className={classes["img"]} />
+                    <img src="/project/img.png" alt="" className={classes["img"]} />
                 </div>
             </div>
         </div>
