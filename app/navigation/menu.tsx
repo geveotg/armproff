@@ -76,14 +76,14 @@ const Menu: FC = () => {
                     </Link>
 
                     <nav>
-                        <Link className={`${classes["nav_link"]} `} href={"/"}>
-                            dashtacner
+                        <Link className={`${classes["nav_link"]} `} href={"/project"}>
+                            Էջերի Պատրաստում
                         </Link>
                         <Link className={`${classes["nav_link"]} `} href={"/project"}>
-                            projects
+                            SMM
                         </Link>
                         <Link className={`${classes["nav_link"]} `} href={"/"}>
-                            about
+                            Մեր Մասին
                         </Link>
                     </nav>
                 </div>
