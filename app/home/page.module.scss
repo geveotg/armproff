@@ -1,0 +1,5 @@
+@import '../style/style.module.scss';
+
+.container {
+    @include display-center(flex, space-around, center, column);
+}

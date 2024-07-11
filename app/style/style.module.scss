@@ -1,0 +1,35 @@
+$background: #333;
+$background-text: rgb(64, 224, 15);
+$border: 1px solid;
+$border-radius-button: 10px;
+$border-radius-staffImg: 50%;
+$border-radius-img: 20px;
+$border-color: rgb(199, 199, 199);
+$box-shadow-color: rgb(135, 135, 135);
+$background-drop_dawn: #887feb;
+$color: white;
+$color-icone: rgb(18, 144, 234);
+$cursor: pointer;
+$error_color: #af1818;
+$font-weight: 900;
+$font-size: 19px;
+$text_color: rgb(0, 0, 0);
+$link-color: #043c71;
+$margin-bottom: 10px;
+$opacity: 0.8;
+$padding-button: 10px;
+$title-font-size: 65px;
+$text-font-size: 16px;
+
+@mixin display-center($display, $justify-content, $align-items, $flex-direction) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+}
+
+@mixin text-style($text_color, $text-font-size, $font-weight ) {
+    color: $text_color;
+    font-size: $text-font-size;
+    font-weight: $font-weight;
+}
