@@ -26,11 +26,11 @@ const Team: FC = (): JSX.Element => {
 
     return (
         <div className={classes["slider-container"]}>
-            {/* <div>/ */}
+
             <h1 className={classes['title']}>
                 Մեր թիմը
             </h1>
-            {/* </div> */}
+
             <div className={classes['slider']}>
                 <Slider {...settings}>{teamList}</Slider>
             </div>

@@ -14,6 +14,13 @@ const LendingPage: FC = (): JSX.Element => {
             </div>
             <div className={classes['container_div']}>
 
+                <div className={classes['img_div']}>
+                    <img
+                        src="/project/img2.avif"
+                        alt="img"
+                        className={classes['img']}
+                    />
+                </div>
                 <div className={classes['text_div']}>
                     <ol className={classes['text-ol']}>
                         <li>
@@ -36,13 +43,6 @@ const LendingPage: FC = (): JSX.Element => {
                         </li>
                     </ol>
                     <p className={classes['text-ol']}>Պատրաստում ենք վաճառող լենդինգ էջեր ապրանքների և ծառայությունների սահմանափակ քանակությամբ: Կայքի այս տեսակները նախատեսված են 1-5 ապրանքի կամ ծառայության ակտիվ գովազդի միջոցով վաճառելու, ակցիաներ գովազդելու, ինֆորմացիա տեղադրելու համար: Լենդինգները բաղկացած են մեկ էջից, որտեղ տրվում են գնորդների հիմնական հարցերի պատասխանները, նշվում են ապրանքի առավելությունները: </p>
-                </div>
-                <div className={classes['img_div']}>
-                    <img
-                        src="/project/img2.avif"
-                        alt="img"
-                        className={classes['img']}
-                    />
                 </div>
             </div>
         </div>

@@ -32,13 +32,10 @@ export const items = [
 ];
 
 export const teamMembers = [
-    { name: "Արման", role: "Տնօրեն", img: "/staff/Arman.jpeg" },
+    { name: "Արման", role: "Հիմնադիր տնօրեն", img: "/staff/Arman.jpeg" },
     { name: "Նարինե", role: "Frontend ծրագրավորող ", img: "/staff/Narine.jpeg" },
     { name: "Գևորգ", role: "Full Stack ծրագրավորող ", img: "/staff/Gevorg.jpg" },
-    { name: "Հերմինե", role: "Frontend ծրագրավորող", img: "/staff/Hermine.jpg" }, { name: "Արման", role: "տնօրեն", img: "/staff/Arman.jpeg" },
-    { name: "Նարինե", role: "Frontend ծրագրավորող", img: "/staff/Narine.jpeg" },
-    { name: "Գևորգ", role: "Full Stack ծրագրավորող ", img: "/staff/Gevorg.jpg" },
-    { name: "Հերմինե", role: "Frontend ծրագրավորող", img: "/staff/Hermine.jpg" }
+    { name: "Հերմինե", role: "Frontend ծրագրավորող", img: "/staff/Hermine.jpg" },
 ];
 
 export const settings = {

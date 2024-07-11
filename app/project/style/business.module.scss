@@ -1,11 +1,11 @@
 @import '../../style/style.module.scss';
 
 .container {
-    height: 500px;
+    height: 600px;
     @include display-center(flex, none, center, column);
 
     .title-div {
-        height: 30%;
+        height: 20%;
         @include display-center(flex, space-around, center, column);
 
         .titleP {
@@ -15,7 +15,7 @@
 
     .container_div {
         height: 70%;
-        @include display-center(flex, space-around, center, row);
+        @include display-center(flex, center, center, row);
 
         .img_div {
             @include display-center(flex, center, none, none);
@@ -116,10 +116,13 @@
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     .container {
+        height: 500px;
+
         .title-div {
-            height: 10%;
+            // background-color: aqua;
+            height: 15%;
             font-size: 15px;
 
             .titleP {
@@ -130,21 +133,23 @@
         .container_div {
             width: 100%;
             height: 90%;
+            @include display-center(flex, center, center, column);
 
             .img_div {
-                width: 60%;
+                width: 90%;
                 display: flex;
                 align-items: center;
-                height: 100%;
+                height: 40%;
 
                 .img {
                     width: 80%;
-                    height: 90%;
+                    height: 99%;
                 }
             }
 
             .text_div {
-                width: 40%;
+                width: 90%;
+                height: 60%;
 
                 .text-ol {
                     font-size: 12px;
@@ -152,5 +157,21 @@
             }
         }
     }
+}
 
+
+@media screen and (max-width: 550px) {
+    .container {
+        .title-div {
+            font-size: 9px;
+        }
+
+        .container_div {
+            .text_div {
+                .text-ol {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
 }

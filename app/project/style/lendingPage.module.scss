@@ -19,12 +19,13 @@
         @include display-center(flex, space-around, center, row);
 
         .img_div {
-            @include display-center(flex, center, none, none);
+            @include display-center(flex, center, center, none);
             width: 50%;
+            height: 100%;
 
             .img {
                 width: 90%;
-                height: 80%;
+                height: 95%;
                 object-fit: cover;
             }
         }
@@ -82,34 +83,57 @@
     }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 650px) {
     .container {
         height: 500px;
 
         .title-div {
-            font-size: 12px;
+            font-size: 15px;
+            height: 20%;
 
             .titleP {
-                font-size: 14px;
+                font-size: 15px;
             }
         }
 
         .container_div {
+            @include display-center(flex, center, center, column);
+            height: 80%;
+
             .img_div {
-                width: 50%;
+                width: 80%;
+                height: 60%;
 
                 .img {
                     width: 95%;
-                    height: 60%;
+                    height: 99%;
                 }
             }
 
             .text_div {
-                width: 50%;
+                width: 99%;
+                height: 40%;
 
                 .text-ol {
-                    font-size: 10px;
+                    font-size: 9px;
 
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .container {
+        .title-div {
+            font-size: 9px;
+        }
+
+        .container_div {
+            .text_div {
+                .text-ol {
+                    font-size: 8px;
                 }
             }
         }
