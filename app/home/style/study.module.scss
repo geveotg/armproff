@@ -132,6 +132,17 @@
 
 @media screen and (max-width: 650px) {
     .language {
+        .sections {
+            flex-direction: column;
+        }
+        .menu {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .language {
         .title {
             font-size: 30px;
         }
